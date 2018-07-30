@@ -55,10 +55,13 @@ RUN apt-get update \
     && docker-php-ext-install xsl bcmath
 
 # Define PHP_TIMEZONE env variable
-ENV PHP_TIMEZONE Europe/Rome
+ENV PHP_TIMEZONE America/Sao_Paulo
 
 # Configure Apache Document Root
 ENV APACHE_DOC_ROOT /var/www/html
+
+# Enable composer as ROOT
+ENV COMPOSER_ALLOW_SUPERUSER 1
 
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
