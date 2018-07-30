@@ -1,5 +1,5 @@
 FROM php:7.0-apache
-MAINTAINER Webgriffe Srl <support@webgriffe.com>
+MAINTAINER rtakauti <rtakauti@hotmail.com>
 
 # Install GD
 RUN apt-get update \
